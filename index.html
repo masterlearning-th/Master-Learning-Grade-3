@@ -41,13 +41,13 @@
                 }
             }
         }
-        var grade = getParamValue('grade')
-        var subject = getParamValue('subject')
-        var unit = getParamValue('unit')
-        var mark = getParamValue('mark')
-        var realurl = "https://script.google.com/macros/s/AKfycbzeu72wxyMqIvKpqaMteCrHMfVF3zbllujF1diLp-590VyMVUrBODLhkNmBzNa5R75a/exec"+"?grade="+grade+"&subject="+subject+"&unit="+unit+"&mark="+mark
+        var grade = getParamValue('grade');
+        var subject = getParamValue('subject');
+        var unit = getParamValue('unit');
+        var mark = getParamValue('mark');
+        var initURL = "https://script.google.com/macros/s/AKfycbzeu72wxyMqIvKpqaMteCrHMfVF3zbllujF1diLp-590VyMVUrBODLhkNmBzNa5R75a/exec";
+        var realurl = initURL+"?grade="+grade+"&subject="+subject+"&unit="+unit+"&mark="+mark;
         var iframeUrl = document.querySelector('#extframe'); 
         iframeUrl.setAttribute('src', realurl); 
-      
 </script>
 </html>
