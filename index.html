@@ -46,7 +46,7 @@
         var unit = getParamValue('unit');
         var mark = getParamValue('mark');
         var initURL = "https://script.google.com/macros/s/AKfycbzeu72wxyMqIvKpqaMteCrHMfVF3zbllujF1diLp-590VyMVUrBODLhkNmBzNa5R75a/exec";
-        var realurl = initURL+"?grade="+grade+"&subject="+subject+"&unit="+unit+"&mark="+mark;
+        var realurl = initURL+"?grade="+String(grade)+"&subject="+String(subject)+"&unit="+String(unit)+"&mark="+String(mark);
         var iframeUrl = document.querySelector('#extframe'); 
         iframeUrl.setAttribute('src', realurl); 
 </script>
