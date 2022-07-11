@@ -32,8 +32,13 @@
             for (var i = 0; i < qArray.length; i++) 
             {
                 var pArr = qArray[i].split('='); //split key and value
-                if (pArr[0] == paramName) 
+                if (pArr[0] == paramName) {
                     return pArr[1]; //return value
+                }
+                else
+                {
+                    return ''; //return value
+                }
             }
         }
         var grade = getParamValue('grade')
